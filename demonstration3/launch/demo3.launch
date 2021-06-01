@@ -1,0 +1,13 @@
+<launch>
+    <!-- Arguments -->
+
+    <!-- SLAM -->
+
+    <!-- My Node -->
+    <node pkg="demonstration3" type="demo3.py" name="line_follower" output="screen" />
+
+    <!-- RViz (don't change) -->
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find demonstration3)/rviz/demo3.rviz"/>
+
+</launch>
